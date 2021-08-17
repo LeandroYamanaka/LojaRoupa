@@ -10,6 +10,21 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     justifyContent: 'center'    
     },
+
+    //Menu//
+    menu:{
+    flexDirection: 'row',
+    width: '100%',
+    height: 30,
+    backgroundColor: '#c6c6c6',
+    justifyContent: 'center',
+    alignItems: 'center',
+    marginBottom: 5
+    },
+
+    menuText:{
+    marginHorizontal: 3
+    },
     //Home//
     container:{
         flex: 1,
@@ -166,7 +181,35 @@ const styles = StyleSheet.create({
 
     bannerImagem:{
         width: '100%',
-        height: '31%'
+        height: '19%',
+        marginBottom: 10
+    },
+
+    bannerEnd:{
+        width: '100%',
+        height: '19%'
+    },
+
+    //Social//
+
+    social:{
+        width: '100%',
+        height: 70,
+        justifyContent:'center',
+        alignItems: 'center',
+        flexDirection: 'row',    
+    },
+
+    socialImagem:{
+        width: 20,
+        height: 20,
+        marginHorizontal: 10
+    },
+
+    socialText:{
+        alignSelf: 'center',
+        fontSize: 18,
+        fontFamily: 'Anton_400Regular'
     }
 
 });

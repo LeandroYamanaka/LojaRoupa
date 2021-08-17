@@ -14,9 +14,30 @@ export default function Home() {
    <View>
      <Image source={require('../../assets/Logo.jpg')} style={styles.logo}/>
    </View>
+   <View style={styles.menu}>
+     <TouchableOpacity style={styles.menuText}>
+       <Text>Novidades</Text>
+     </TouchableOpacity>
+     <TouchableOpacity style={styles.menuText}>
+       <Text>Destaques</Text>
+     </TouchableOpacity>
+     <TouchableOpacity style={styles.menuText}>
+       <Text>Feminino</Text>
+     </TouchableOpacity>
+     <TouchableOpacity style={styles.menuText}>
+       <Text>Masculino</Text>
+     </TouchableOpacity>
+     <Text>•</Text>
+     <TouchableOpacity style={styles.menuText}>
+       <Text>Login</Text>
+     </TouchableOpacity>
+     <TouchableOpacity style={styles.menuText}>
+       <Text>Carrinho</Text>
+     </TouchableOpacity>
+   </View>
       <View style={styles.header}>       
         <Image source={require('../../assets/banner.jpg')} 
-        style={styles.headerImagem}/>
+        style={styles.headerImagem}/>                
         <View style={styles.textContainer}>
           <Text style={styles.text}>Moda</Text>
           <Text style={styles.text}>•</Text>
@@ -56,8 +77,27 @@ export default function Home() {
           </View>          
           <View>
             <Image source={require('../../assets/bannerfooter.jpg')} style={styles.bannerImagem} />
+            <Image source={require('../../assets/bannerEnd.jpg')} style={styles.bannerEnd}/>
+            <Text style={styles.socialText}>Redes Sociais</Text>
+            <View style={styles.social}>
+              <TouchableOpacity>
+              <Image source={require('../../assets/instagram.png')} style={styles.socialImagem}/>
+              </TouchableOpacity>            
+              <TouchableOpacity>
+              <Image source={require('../../assets/facebook.png')} style={styles.socialImagem}/>
+              </TouchableOpacity>            
+              <TouchableOpacity>
+              <Image source={require('../../assets/twitter.png')} style={styles.socialImagem}/>
+              </TouchableOpacity>            
+              <TouchableOpacity>
+              <Image source={require('../../assets/pinterest.png')} style={styles.socialImagem}/>
+              </TouchableOpacity>            
+              <TouchableOpacity>
+              <Image source={require('../../assets/snapchat.png')} style={styles.socialImagem}/>
+              </TouchableOpacity>
+            </View>
           </View>
-          <View style={{height: 480}}/>
+          <View style={{height: 650}}/>
           </ScrollView>
         </View>
    </View>
