@@ -11,10 +11,13 @@ import Saia from './pages/Saia';
 import Shorts from './pages/Shorts';
 import Vestido from './pages/Vestido';
 
+
 const Stack = createStackNavigator();
+
 
 function Routes(){
     return(
+        
         <NavigationContainer>
             <Stack.Navigator>
                 <Stack.Screen
@@ -55,7 +58,11 @@ function Routes(){
                     component={Vestido}        
                 />
             </Stack.Navigator>
+        
         </NavigationContainer>
+        
+      
+        
     );
 }
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, ScrollView, Image, TouchableOpacity, ViewPropTypes } from 'react-native';
+import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native';
 import styles from './styles';
 import {MaterialIcons} from '@expo/vector-icons';
 import Roupas from '../../component/Roupas';
@@ -75,9 +75,7 @@ export default function Home() {
             <Roupas img={require('../../assets/short_estampado.jpg')}
             cost="R$129,90" onClick={()=>navigation.navigate('Shorts')}>Short Estampado</Roupas>          
           </View>          
-          <View>
-            <Image source={require('../../assets/bannerfooter.jpg')} style={styles.bannerImagem} />
-            <Image source={require('../../assets/bannerEnd.jpg')} style={styles.bannerEnd}/>
+          <View>                     
             <Text style={styles.socialText}>Redes Sociais</Text>
             <View style={styles.social}>
               <TouchableOpacity>
@@ -97,7 +95,7 @@ export default function Home() {
               </TouchableOpacity>
             </View>
           </View>
-          <View style={{height: 650}}/>
+          <View style={{height: 270}}/>
           </ScrollView>
         </View>
    </View>

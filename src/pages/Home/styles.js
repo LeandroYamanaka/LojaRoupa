@@ -6,7 +6,7 @@ const styles = StyleSheet.create({
     logo:{
     width: '100%',
     height: 50,
-    marginTop: 50,
+    marginTop: 10,
     marginBottom: 20,
     justifyContent: 'center'    
     },
@@ -38,7 +38,7 @@ const styles = StyleSheet.create({
 
     headerImagem:{
         width: '100%',
-        height: '16%'    
+        height: '14%'    
     },
 
     textContainer:{
@@ -210,7 +210,67 @@ const styles = StyleSheet.create({
         alignSelf: 'center',
         fontSize: 18,
         fontFamily: 'Anton_400Regular'
+    },
+
+    //About//
+    aboutContainer:{
+        width: '100%',
+        height: '100%'
+    },
+
+    aboutImagem:{
+        width: '100%',
+        height: '28%',
+        marginTop: 15
+    },
+
+    aboutText:{
+        marginTop: 10,
+        marginLeft: 20,
+        marginRight: 20,
+        marginBottom: 10,
+        fontSize: 18
+    },
+
+    aboutEnd:{
+        width: '100%',
+        height: '31%'
+    },
+
+    //Cards//
+
+    cardImagem:{
+        width: 110,
+        height: 110,
+        alignSelf: 'center',
+        marginTop: 10          
+    },
+
+    cardText:{
+        alignSelf: 'center',
+        fontSize: 22,
+        marginTop: 15,
+        fontFamily: 'Anton_400Regular'
+    },
+
+    trasnferText:{
+        alignSelf: 'center',
+    },
+
+    //Category//
+
+    categoryImagem:{
+        width: 110,
+        height: 140,
+        marginTop: 20
+    },
+
+    categoryText:{
+        fontSize: 18,
+        alignSelf: 'center',
+        marginTop: 5
     }
+
 
 });
 
