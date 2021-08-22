@@ -10,6 +10,7 @@ export default function Detail({navigation}) {
 
   navigation.setOptions({
     headerTitle: 'Camisa Cropped'
+    
   })
 
  return (

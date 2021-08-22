@@ -1,11 +1,13 @@
 import 'react-native-gesture-handler';
 import { StatusBar } from 'expo-status-bar';
 import React from 'react';
+import {View} from 'react-native';
 import AppLoading from 'expo-app-loading'
 import { useFonts, Anton_400Regular} from '@expo-google-fonts/anton';
 import Routes from './src/router';
 import Tabs from './src/tab';
-import {NavigationContainer} from '@react-navigation/native';
+import { NavigationContainer } from '@react-navigation/native';
+
 
 
 export default function App() {
@@ -19,15 +21,16 @@ export default function App() {
     return <AppLoading />;
   }
 
-
+  
   return (
     <>
-      <StatusBar style="light" backgroundColor="#000" translucent={true} />
-      
+      <StatusBar style="light" backgroundColor="#000" translucent={false} />
       <NavigationContainer>
-      <Tabs/>
+      <Tabs/> 
       </NavigationContainer>
-      
+
+        
+         
     </>
   );
 }

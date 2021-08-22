@@ -4,7 +4,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Cards from './pages/Cards';
 import Category from './pages/Category';
-import {Entypo, Feather} from '@expo/vector-icons'
+import {Entypo} from '@expo/vector-icons';
+import Routes from './router';
 
 const Tab = createBottomTabNavigator();
 
@@ -21,7 +22,7 @@ export default function Tabs() {
 
     }}
     >
-        <Tab.Screen name="Home" component={Home} 
+        <Tab.Screen name="Home" component={Routes} 
         options={{tabBarIcon:({size, color})=>(
         <Entypo name="home" size={size} color={color}/>
         )

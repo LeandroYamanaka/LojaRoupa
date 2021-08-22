@@ -1,5 +1,4 @@
 import React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import Home from './pages/Home';
 import Detail from './pages/Detail';
@@ -11,14 +10,12 @@ import Saia from './pages/Saia';
 import Shorts from './pages/Shorts';
 import Vestido from './pages/Vestido';
 
-
 const Stack = createStackNavigator();
 
 
 function Routes(){
     return(
-        
-        <NavigationContainer>
+                
             <Stack.Navigator>
                 <Stack.Screen
                     name="Home"
@@ -58,9 +55,9 @@ function Routes(){
                     component={Vestido}        
                 />
             </Stack.Navigator>
+            
         
-        </NavigationContainer>
-        
+               
       
         
     );
